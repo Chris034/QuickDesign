@@ -6,6 +6,7 @@ import TabPanel from "./components/TabPanel";
 import StageStepper from "./components/StageStepper";
 import SummaryHeading from "./components/SummaryHeading";
 import { Button } from "@mui/material";
+import { LAYOUT_CONSTANTS } from "./components/constants";
 
 const Container = styled.div`
   display: flex;
@@ -54,10 +55,9 @@ const Footer = styled.div`
 `;
 
 const BodyHeader = styled.div`
-  // border: 1px solid black;
-  max-height: 50px; //todo: make var
+  max-height: ${LAYOUT_CONSTANTS.STAGE_STEPPER_HEIGHT}px;
   position: relative;
-  height: 50px; //todo: make var
+  height: ${LAYOUT_CONSTANTS.STAGE_STEPPER_HEIGHT}px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -66,9 +66,8 @@ const BodyHeader = styled.div`
 `;
 
 const NavBarSummary = styled.div`
-  // border: 1px solid black;
-  max-height: 50px; //todo: make var
-  height: 50px; //todo: make var
+  max-height: ${LAYOUT_CONSTANTS.STAGE_STEPPER_HEIGHT}px;
+  height: ${LAYOUT_CONSTANTS.STAGE_STEPPER_HEIGHT}px;
 `;
 
 const NavBarContent = styled.div`

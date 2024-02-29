@@ -1,0 +1,3 @@
+export const LAYOUT_CONSTANTS = {
+    STAGE_STEPPER_HEIGHT: 50
+}

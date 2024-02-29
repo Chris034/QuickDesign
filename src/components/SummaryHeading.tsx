@@ -1,9 +1,10 @@
 import styled, { useTheme } from "styled-components";
 import Text from "./Text"
+import { LAYOUT_CONSTANTS } from "./constants";
 
 const Container = styled.div`
     background-color: ${props => props.theme.palette.primary.dark};
-    height: 50px; //todo: make var
+    height: ${LAYOUT_CONSTANTS.STAGE_STEPPER_HEIGHT}px;
     padding: 3px 24px 3px 15px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
