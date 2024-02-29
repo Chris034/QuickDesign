@@ -28,12 +28,10 @@ function StageStepIcon(props: StepIconProps) {
   }
 
   const StageConnector = styled(StepConnector)`
+  left: calc(-50% + -10px);
+  right: calc(50% + -10px);
   & .${stepConnectorClasses.line} {
-    transform: translateX(-7px);
-    //todo: fix this for 4k monitors and <700px
-    width: 106%;
-    z-index: -1;
-    border-color: ${props => props.theme.palette.border.dark};
+    border-color: red;//${props => props.theme.palette.border.dark};
     border-top-width: 4px;
     border-radius: 1px;
   }
@@ -95,7 +93,8 @@ const StageStepLabel = styled(StepLabel)`
 
   return (
     <Box sx={{ width: '100%', position: 'absolute', top: '-16px', zIndex: 999, maxHeight: '75px'}}>
-      <Stepper connector={<StageConnector />} alternativeLabel activeStep={activeStep}>
+      <Stepper connector={<StageConnector />} alternativeLabel 
+      activeStep={activeStep}>
         {steps.map((label) => {
           const stepProps: { completed?: boolean } = {};
           const labelProps: {
